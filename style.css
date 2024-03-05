@@ -1,0 +1,138 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;/*Black background*/
+    color: #fff;/*White text color*/
+}
+/*---------index.html----------*/
+ 
+header{
+    background-color: #1a1a1a;/*Slightly lighter black for header*/
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li{
+    float: left;
+}
+
+.navbar li a {
+display: block;
+color: #fff;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+
+}
+/*Hover effect*/
+.navbar li a :hover{
+    color:#007bff;
+}
+.active {
+    background-color: #007bff;
+}
+/*Updated colors for better visibility and contrast*/
+.featured-sneaker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #222;/*Even lighter clack for content area*/
+
+}
+h1,h2, p {
+    color: #fff;/*Ensure the text is white for visibility*/
+
+}
+h2{
+    text-align: center;
+}
+.cta-button{
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/*Responsive design */
+
+@media (max-width:768px) {
+    .featured-sneaker{
+        flex-direction: column;
+        text-align: center;
+    
+        }
+    
+    
+    .featured-sneaker img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .sneaker-details{
+        max-width: 80%;
+    }
+    
+    }
+    /*Contact form styles*/
+    .contact-form {
+        padding: 50px;
+        background-color: #fff;
+        text-align: center;
+    }
+    .contact-form h2{
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form label {
+        color: #333;
+        font-weight: bold;
+    
+    }
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8 px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+    }
+
+    .contact-form button{
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .contact-form button:hover {
+        background-color: #0056b3;
+    }
+    footer{
+        background-color:#333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
