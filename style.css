@@ -34,6 +34,14 @@ padding: 14px 16px;
 text-decoration: none;
 
 }
+
+.signup-btn {
+    background-color:#007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+ 
+}
+
 /*Hover effect*/
 .navbar li a :hover{
     color:#007bff;
@@ -41,6 +49,10 @@ text-decoration: none;
 .active {
     background-color: #007bff;
 }
+.signup-btn :hover {
+    background-color: #0056b3;
+}
+
 /*Updated colors for better visibility and contrast*/
 .featured-sneaker{
     display: flex;
@@ -67,7 +79,44 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+/*-----signup.html------*/
+.signup-container{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+}
 
+form#signup-form{
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    color: #1a1a1a;
+}
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"] :hover {
+    background-color: #007bff;
+}
 /*Responsive design */
 
 @media (max-width:768px) {
